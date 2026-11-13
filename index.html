@@ -34,3 +34,84 @@ h2{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--piment);margin-bottom:8px}
 .note{margin-top:22px;font-size:.9rem;opacity:.7}
 
 .avis{background:var(--bois);color:var(--creme);max-width:none}
+.avis .in{max-width:1000px;margin:0 auto}
+.avis h2{color:var(--sesame)}
+.avis blockquote{font-family:Georgia,serif;font-size:1.25rem;border-left:4px solid var(--sesame);padding-left:18px;margin-top:22px;max-width:60ch}
+
+.infos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;align-items:start}
+.infos h3{font-size:1.2rem;color:var(--piment);margin-bottom:6px}
+.infos a{color:var(--piment);font-weight:700}
+footer{text-align:center;padding:26px;font-size:.85rem;opacity:.65}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Ti Kouloir</h1>
+  <p>Le petit couloir le plus gourmand de Grand Baie.</p>
+  <div class="btns">
+    <a class="btn plein" href="tel:+2302635645">Appeler</a>
+    <a class="btn vide" href="https://www.google.com/maps/search/?api=1&query=Ti+Kouloir+Grand+Baie+Mauritius">Voir sur la carte</a>
+  </div>
+</header>
+
+<main>
+<section id="menu">
+  <h2>Au menu</h2>
+  <p class="sous">Cuisiné minute, servi chaud, à emporter ou à manger sur place.</p>
+  <div class="menu">
+    <article class="plat">
+      <img src="images/mines-poulet.jpg" alt="Assiette de mines frites au poulet et légumes">
+      <h3>Mines frites poulet</h3>
+      <p>Nouilles sautées au wok, poulet tendre, légumes croquants.</p>
+      <p class="prix">Environ Rs 165</p>
+    </article>
+    <article class="plat">
+      <img src="images/mines-boeuf.jpg" alt="Assiette de mines frites au bœuf et poivrons">
+      <h3>Mines frites bœuf</h3>
+      <p>La version généreuse, bœuf grillé et poivrons.</p>
+      <p class="prix">Environ Rs 210</p>
+    </article>
+    <article class="plat">
+      <img src="images/boulettes.jpg" alt="Boulettes caramélisées au sésame">
+      <h3>Boulettes</h3>
+      <p>Faites maison chaque jour, à croquer une par une.</p>
+      <p class="prix">Environ Rs 25 pièce</p>
+    </article>
+  </div>
+  <p class="note">Prix indicatifs, à confirmer avec le restaurant.</p>
+</section>
+
+<section class="avis">
+  <div class="in">
+    <h2>Ce qu'on en dit</h2>
+    <blockquote>Noté 4,5 sur 5 sur Tripadvisor, avec près de 300 avis de voyageurs et de gens du coin.</blockquote>
+    <blockquote>Une ambiance de cantine populaire : on mange au milieu des habitués.</blockquote>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="infos">
+    <div>
+      <h3>Adresse</h3>
+      <p>School Lane, Grand Baie, Maurice</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Ti+Kouloir+Grand+Baie+Mauritius">Ouvrir dans Google Maps</a></p>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p>Lundi au samedi, 11h à 17h30.</p>
+      <p>Fermé le dimanche.</p>
+    </div>
+    <div>
+      <h3>Téléphone</h3>
+      <p><a href="tel:+2302635645">+230 263 5645</a></p>
+      <p>Il y a souvent la queue aux heures de pointe : ça vaut l'attente.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Maquette de démonstration pour Ti Kouloir, Grand Baie, Maurice</footer>
+</body>
+</html>
